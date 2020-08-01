@@ -1,0 +1,10 @@
+/* Custom Css */
+
+.navbar-brand img {
+  width: 50px;;
+}
+
+li a {
+    color:white!important;
+    font-weight: bold;
+}

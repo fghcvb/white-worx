@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
+/* Custom Css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* globals */
+.bg-primary {
+  background-color: #2874f0!important; 
+  color:white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.logOut{
+  cursor: pointer;
+}
+.signUp{
+  color:#2874f0;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #2874f0!important;
+  border-color: #2874f0!important;
+}
+.login{
+  background: #fb641b;
+  text-decoration: none;
+  margin-left: 47px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.login:hover{
+  text-decoration: none;
+  color: white;
+}
+.footerContent {
+  color: white;
+  font-weight: bold;
+  padding: 30px;
+  background-color: #2874f0!important;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 0px;
+  left: 0px;
+  height:auto;  
+}
+.addPostBtn, .editPostBtn {
+  background-color: #2874f0!important;
+  box-shadow: none!important;
+  outline: none!important;
+  border:none!important;
+}
+.editBtn, .editBtn:focus, .saveBtn, .saveBtn:focus {
+  box-shadow: none!important;
+  outline: none!important;
+  border:none!important;
+  margin-top: 18px;
+  background-color: #2874f0!important;
+}
+.delePostBtn, .signUpBtn, .loginBtn {
+  box-shadow: none!important;
+  outline: none!important;
+  border:none!important;
+}
+button:focus {
+  outline: none!important;
+}
+.closeBtn {
+  box-shadow: 0 0 0 0 rgba(0,123,255,.25)!important;
+}
+.viewPostBtn {
+  background: #fb641b!important;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  padding: 8px 11px;
+  border-radius: 5px;
+}
+.viewPostBtn:hover {
+  text-decoration: none; 
+}
+.table td {
+  vertical-align: inherit!important;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

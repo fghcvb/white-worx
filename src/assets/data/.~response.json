@@ -1,0 +1,43 @@
+{
+  "registerUsers": [
+    {
+      "name": "Ramchandra",
+      "email": "velipramchandra@gmail.com",
+      "password": "test12345",
+      "id": 1
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test123456",
+      "id": 2
+    }
+  ],
+  "login": {
+    "email": "test1@gmail.com",
+    "password": "ccccccc",
+    "token": "id1"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "postTitle": "Section1",
+      "postContent": "section"
+    },
+    {
+      "postTitle": "Section2",
+      "postContent": "section2",
+      "id": 2
+    },
+    {
+      "postTitle": "Section3",
+      "postContent": "section3",
+      "id": 3
+    },
+    {
+      "postTitle": "Section4",
+      "postContent": "section4",
+      "id": 4
+    }
+  ]
+}
