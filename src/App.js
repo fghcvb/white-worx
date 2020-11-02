@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import { connect } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
-import SignIn from './components/auth/SignIn'
-import SignUp from './components/auth/SignUp'
-import PostList from './components/blogs/PostList'
-import Post from './components/blogs/Post'
-import Footer from './components/layout/Footer'
-import PrivateRoute from "./components/private-route/PrivateRoute";
+import Home from './components/layout/Home';
+import About from './components/layout/About';
+import Services from './components/layout/Services';
+import OurWork from './components/layout/OurWork';
+import Testimonials from './components/layout/Testimonials';
+import Contact from './components/layout/Contact';
 
 //App
 class App extends Component {
@@ -19,25 +17,17 @@ class App extends Component {
   render() {
     return (
       //Navigation
-      <BrowserRouter >
         <div className="App">
           <Navbar />
-          <Route exact path='/' component={SignIn} />
-          <Route path='/signin' component={SignIn} />
-          <Route path='/signup' component={SignUp} />
-          <PrivateRoute path="/post/:id" component={Post} />
-          <PrivateRoute path='/home' component={PostList} />
-          <Footer />
+          <Home/>
+          <About />
+          <Services  />
+          <OurWork />
+          <Testimonials />
+          <Contact />
         </div>
-      </BrowserRouter>
     );
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    auth: state.auth
-  }
-}
-
-export default connect(mapStateToProps)(App);
+export default App;

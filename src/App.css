@@ -17,92 +17,53 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 /* globals */
 .bg-primary {
-  background-color: #2874f0!important; 
-  color:white;
+  background-color: white!important; 
   font-weight: bold;
   margin-bottom: 20px;
 }
-.logOut{
-  cursor: pointer;
+.fixed-top {
+  position: sticky!important;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.15);
 }
-.signUp{
-  color:#2874f0;
+.bg-dark {
+  background-color: white!important;
 }
+
 .btn-primary {
   color: #fff;
   background-color: #2874f0!important;
   border-color: #2874f0!important;
 }
-.login{
-  background: #fb641b;
-  text-decoration: none;
-  margin-left: 47px;
-  color: white;
+.nav-item > .active {
+  border-bottom: 2px solid black;
 }
-.login:hover{
-  text-decoration: none;
-  color: white;
-}
-.footerContent {
-  color: white;
-  font-weight: bold;
-  padding: 30px;
-  background-color: #2874f0!important;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  margin-bottom: 0px;
-  left: 0px;
-  height:auto;  
-}
-.addPostBtn, .editPostBtn {
-  background-color: #2874f0!important;
-  box-shadow: none!important;
-  outline: none!important;
-  border:none!important;
-}
-.editBtn, .editBtn:focus, .saveBtn, .saveBtn:focus {
-  box-shadow: none!important;
-  outline: none!important;
-  border:none!important;
-  margin-top: 18px;
-  background-color: #2874f0!important;
-}
-.delePostBtn, .signUpBtn, .loginBtn {
-  box-shadow: none!important;
-  outline: none!important;
-  border:none!important;
-}
+
 button:focus {
   outline: none!important;
 }
-.closeBtn {
-  box-shadow: 0 0 0 0 rgba(0,123,255,.25)!important;
+.navbar-dark .navbar-toggler {
+  color: black!important;
+  border-color:black!important;
 }
-.viewPostBtn {
-  background: #fb641b!important;
-  color: white;
-  text-decoration: none;
-  padding: 5px 20px;
-  padding: 8px 11px;
-  border-radius: 5px;
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
 }
-.viewPostBtn:hover {
-  text-decoration: none; 
+/* Media Queries*/
+@media (min-width: 992px){
+  .navbar-expand-lg {
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+  }
 }
-.table td {
-  vertical-align: inherit!important;
-}
-.modal-backdrop.fade {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
+
 
 
 

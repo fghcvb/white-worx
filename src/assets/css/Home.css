@@ -1,10 +1,12 @@
 /* Custom Css */
 
 .navbar-brand img {
-  width: 50px;;
+  width: 60px;
+  cursor: pointer;
 }
 
 li a {
-    color:white!important;
+    color:black!important;
     font-weight: bold;
+    cursor: pointer;
 }
